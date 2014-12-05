@@ -1,0 +1,24 @@
+ <div class="page-header">
+   <h1>View List</h1>
+ </div>
+ <form role="form" ng-submit="updateTList()">
+ <div class="form-group well well-lg">
+   <strong>Title : <input type="text"  ng-model="tlist.title" class="form-control" id="tlistTitle" value="{{tlist.title}}"/></strong><br/>
+ </div>
+  <div class="form-group">
+    <label>Artefacts</label>
+    <div class="row" ng-repeat="art in tlist.artefacts">
+      <input type="checkbox" ng-checked="isSelected(art.text) > -1" ng-click="toggleSelection(art.text)"/> 
+      <input type="text" ng-model="art.text" placeholder="Enter artefact {{$index+1}}"><br>
+    </div>
+    <button type="button" class="btn btn-default" ng-click="addArtefact()"><span class="glyphicon glyphicon-plus"></span></button>
+  </div>    
+  <div class="row">
+    <div class="col-xs-1">
+      <a href="#/tlists" class="btn btn-default" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back</a>
+    </div>
+    <div class="col-xs-1">
+      <button class="btn btn-primary pull-right" type="submit">Update List</button>
+    </div>
+  </div> 
+ </form>
