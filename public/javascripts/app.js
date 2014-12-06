@@ -1,13 +1,4 @@
-angular.module('FCIWEB', ['tlistServices'])
-    .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.
-            when('/tlists/:tlistId', { templateUrl: 'partials/item.html', controller: TListItemCtrl }).
-            when('/tlists', 	     { templateUrl: 'partials/list.html', controller: TListListCtrl }).
-            when('/new',             { templateUrl: 'partials/new.html',  controller: TListNewCtrl }).
-            otherwise({ redirectTo: '/new' });
-        }]);
-
-angular.module('FCIWEB').run(['$window',
+angular.module('FCIWEB', ['tlistServices']).run(['$window',
     function($window){
         $window.fbAsyncInit = function() {
             FB.init({
@@ -29,4 +20,13 @@ angular.module('FCIWEB').run(['$window',
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     }
-]);
+])
+    .config(['$routeProvider', function($routeProvider) {
+        $routeProvider.
+            when('/tlists/:tlistId', { templateUrl: 'partials/item.html', controller: TListItemCtrl }).
+            when('/tlists', 	     { templateUrl: 'partials/list.html', controller: TListListCtrl }).
+            when('/new',             { templateUrl: 'partials/new.html',  controller: TListNewCtrl }).
+            otherwise({ redirectTo: '/new' });
+        }]);
+/*
+angular.module('FCIWEB');*/
