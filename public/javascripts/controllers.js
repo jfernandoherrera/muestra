@@ -2,6 +2,9 @@
 function TListListCtrl($scope, TListDB) {
 	$scope.tlists = TListDB.query();
 }
+
+
+
 // Voting / viewing poll results
 function TListItemCtrl($scope, $location, $routeParams, TListDB) {
   $scope.tlist = TListDB.get({tlistId: $routeParams.tlistId});
@@ -60,6 +63,12 @@ function TListNewCtrl($scope, $location, TListDB) {
   };
   $scope.addArtefact = function() {
     $scope.tlist.artefacts.push({ text: '' });
+  };
+  $scope.logIn = function(){
+    FB.login(function (response) {
+
+        },
+        {scope: 'email,user_friends'});
   };
   $scope.createTList = function() {
       var tlist = $scope.tlist;
