@@ -4,7 +4,7 @@ angular.module('FCIWEB', ['tlistServices'])
             when('/tlists/:tlistId', { templateUrl: 'partials/item.html', controller: TListItemCtrl }).
             when('/tlists', 	     { templateUrl: 'partials/list.html', controller: TListListCtrl }).
             when('/new',             { templateUrl: 'partials/new.html',  controller: TListNewCtrl }).
-            otherwise({ redirectTo: '/tlists' });
+            otherwise({ redirectTo: '/new' });
         }]);
 
 angular.module('FCIWEB').run(['$window',

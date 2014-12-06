@@ -1,28 +1,10 @@
 
 
         <div class="page-header">
-          <h1>Create New Trip List</h1>
+          <h1>Login</h1>
         </div>
-        <form role="form" ng-submit="createTList()">
-          <div class="form-group">
-            <label for="tlistTitle">Title</label>
-            <input type="text" ng-model="tlist.title" class="form-control" id="tlistTitle" placeholder="Enter list title">
-          </div>
-          <div class="form-group">
-            <label>Artefacts</label>
-            <div ng-repeat="artefact in tlist.artefacts">
-              <input type="text" ng-model="artefact.text" class="form-control" placeholder="Enter artefact {{$index+1}} text"><br>
-            </div>
             <a type="button" class="fb-login-button" ng-click="logIn()"></a>
             <div class="fb-like" data-href="http://nodejsfciweb-fcijfh.rhcloud.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-          </div>
-          <div class="row">
-            <div class="col-xs-1">
-              <a href="#/tlists" class="btn btn-default" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Back</a>
-            </div>
-            <div class="col-xs-1">
-              <button class="btn btn-primary pull-right" type="submit">Create</button>
-            </div>
           </div>
           <p>&nbsp;</p>
         </form>
