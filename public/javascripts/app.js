@@ -20,8 +20,7 @@ angular.module('FCIWEB', ['tlistServices']).run(['$window',
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     }
-])
-    .config(['$routeProvider', function($routeProvider) {
+]).config(['$routeProvider', function($routeProvider) {
         $routeProvider.
             when('/tlists/:tlistId', { templateUrl: 'partials/item.html', controller: TListItemCtrl }).
             when('/tlists', 	     { templateUrl: 'partials/list.html', controller: TListListCtrl }).

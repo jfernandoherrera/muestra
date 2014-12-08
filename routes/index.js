@@ -15,7 +15,7 @@ var TListSchema = require('../models/TList.js').TListSchema;
 var TListDB = db.model('tlists', TListSchema);
 
 exports.index = function(req, res) {
-  res.render('index', {title: 'My Trip List'});
+  res.render('index', {title: 'FCI WEB'});
 };
 
 // JSON API for list of list
