@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 openshift-angularjs-nodejs-mongodb-quickstart
 =============================================
 AngularJS, NodeJs, MongoDB sample
@@ -49,3 +50,8 @@ Host *.rhcloud.com
 	Port 22 
 	ProxyCommand /c/cygwin/bin/nc.exe -x mysocksproxy:1080 %h %p
 </pre>
+=======
+The OpenShift `nodejs` cartridge documentation can be found at:
+
+http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
+>>>>>>> 08ecbca004f7536c41cf0212f58c65303b6f1ea7

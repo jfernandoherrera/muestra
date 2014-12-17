@@ -38,7 +38,7 @@ http.createServer(myapp);
 myapp.use(express.static(__dirname+ '/public'));
 
 // development only
-//pp.render('index', {title: 'FCI WEB'});
+//myapp.render('index', {title: 'FCI WEB'});
 
 
 //app.get('/', router.index);
