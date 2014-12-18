@@ -9,7 +9,7 @@ app.controller('loginCtrl', [
                             .success(
                             function (data, status) {
 
-//                                $window.location.href = '/home.html';
+                              window.location.replace('/new.html');
                             }
                         )
                             .error(
@@ -29,8 +29,8 @@ app.controller('loginCtrl', [
                                                 $http.post('/register', user)
                                                     .success(
                                                     function (data, status) {
-                                                        //$state.go('/list');
-//                                                            $window.location.href = '/home.html';
+
+                                                        window.location.replace('/new.html');
                                                     }
                                                 )
                                                     .error(
