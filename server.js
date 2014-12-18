@@ -30,7 +30,7 @@ mongoClient.connect('mongodb://'+ connection_string,
 
         myapp.set('port', process.env.PORT );
 //myapp.set('ipaddr', ipaddr);
-        myapp.set('views', __dirname + '/public/views');
+        myapp.set('views', __dirname + '/public/partials');
         myapp.use(express.favicon(path.join(__dirname, 'public/images/favicon.ico')));
         myapp.use(express.logger('dev'));
         myapp.use(express.bodyParser());
@@ -55,7 +55,7 @@ mongoClient.connect('mongodb://'+ connection_string,
            ipaddress = "127.0.0.1";
         };
 
-        myapp.listen(process.env.OPENSHIFT_NODEJS_PORT || 8888,ipaddress , function(){
+        myapp.listen(process.env.OPENSHIFT_NODEJS_PORT ,ipaddress , function(){
             console.log('Express server listening on port ' +process.env.OPENSHIFT_NODEJS_PORT || 8888);
         });
     }
