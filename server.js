@@ -55,7 +55,7 @@ mongoClient.connect('mongodb://'+ connection_string,
            ipaddress = "127.0.0.1";
         };
 
-        myapp.listen(process.env.OPENSHIFT_NODEJS_PORT ,ipaddress , function(){
+        myapp.listen(process.env.OPENSHIFT_NODEJS_PORT  ,ipaddress , function(){
             console.log('Express server listening on port ' +process.env.OPENSHIFT_NODEJS_PORT );
         });
     }
