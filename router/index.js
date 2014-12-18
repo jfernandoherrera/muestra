@@ -7,6 +7,7 @@ module.exports = function(app, db) {
 
   app.post('/login', reqHandler.logUser);
   app.post('/register',reqHandler.registerUser);
+  app.post('/home',reqHandler.apps);
 };
 // JSON API for list of lis
 

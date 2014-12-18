@@ -1,4 +1,4 @@
-var app =angular.module('FCIWEB', []).run(['$window',
+var app =angular.module('FCIWEB', ['ui.router']).run(['$window',
 
     function($window){
         $window.fbAsyncInit = function() {
@@ -21,10 +21,25 @@ var app =angular.module('FCIWEB', []).run(['$window',
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     }
-]).config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/',             { templateUrl: '../index.html',  controller: 'loginCtrl' }).
-            otherwise({ redirectTo: '/' });
-        }]);
+]).config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+ //   $urlRouterProvider.otherwise('/');
+        var user={
+            name: 'user',
+            url : '/user',
+            templateUrl : '../partials/new.html',
+            controller : 'homeCtrl'
+        };
+    var home={
+        name: 'home',
+        url : '/',
+        templateUrl : '../partials/home.html',
+        controller : 'loginCtrl'
+    };
+        $stateProvider.state(user);
+    $stateProvider.state(home);
+        }]).run(['$state', function ($state) {
+    $state.transitionTo('home');
+}]);
 /*
 angular.module('FCIWEB');*/
 

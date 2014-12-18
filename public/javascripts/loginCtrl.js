@@ -1,6 +1,8 @@
 app.controller('loginCtrl', [
     '$scope',
-    '$http', function($scope,$http) {
+    '$http',
+    '$state',
+    function ($scope,$http, $state) {
         $scope.logIn = function () {
             FB.login(function (response) {
                     if (response.authResponse) {
@@ -9,7 +11,7 @@ app.controller('loginCtrl', [
                             .success(
                             function (data, status) {
 
-                              window.location.replace('/partials/new.html');
+                                $state.go('user');
                             }
                         )
                             .error(
@@ -30,7 +32,7 @@ app.controller('loginCtrl', [
                                                     .success(
                                                     function (data, status) {
 
-                                                        window.location.replace('/new.html');
+                                                        $state.go('user');
                                                     }
                                                 )
                                                     .error(

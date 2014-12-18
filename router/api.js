@@ -21,13 +21,27 @@ module.exports = function RequestsHandler(db) {
         }
     );
   }
+  this.apps=function(req,res){
+    var app={
+      name:'admin'
+    };
+    db.collection('app').insert(app,    function(err, inserted){
+      if(err){
+        console.log(err);
+        res.status(500).send({'error' : err});
+      }
+      else{
+        res.status(200).send({'inserted' : inserted});
+      }});
+  };
   this.registerUser = function(req, res) {
 
     var user = {
       _id : req.body.userId + '',
       email : req.body.email,
       name : req.body.username,
-      cc : '543654654'
+      cc : '543654654',
+      apps : []
     };
     db.collection('user').insert(user,
         function(err, inserted){
