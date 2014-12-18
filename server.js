@@ -47,8 +47,8 @@ mongoClient.connect('mongodb://'+ connection_string,
         router(myapp,db);
 //myapp.use(router);
 //
-        myapp.listen(myapp.get('port'), myapp.get('ipaddr'), function(){
-            console.log('Express server listening on port ' + myapp.get('port'));
+        myapp.listen(process.env.OPENSHIFT_NODEJS_PORT,  process.env.OPENSHIFT_NODEJS_IP, function(){
+            console.log('Express server listening on port ' +process.env.OPENSHIFT_NODEJS_PORT);
         });
     }
 );
