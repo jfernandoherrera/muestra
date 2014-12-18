@@ -9,7 +9,7 @@ app.controller('loginCtrl', [
                             .success(
                             function (data, status) {
 
-                              window.location.replace('/new.html');
+                              window.location.replace('/partials/new.html');
                             }
                         )
                             .error(
