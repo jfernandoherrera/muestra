@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-var router = require('./router/index')
+var router = require('./router')
     ,express = require('express')
     , http = require('http')
     , mongoClient = require('mongodb').MongoClient
