@@ -12,7 +12,16 @@ var router = require('./router/index')
 var myapp = express();
 //var mongoose = require('mongoose');
 // all environments
-mongoClient.connect('mongodb://'+ self.connection_string,
+connection_string = '127.0.0.1:27017/nodejs';
+// if OPENSHIFT env variables are present, use the available connection info:
+if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD){
+    connection_string = 'admin' + ":" +
+    process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
+    process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
+    process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
+    process.env.OPENSHIFT_APP_NAME;
+}
+mongoClient.connect('mongodb://'+ connection_string,
     function(err, db){
         if(err){
             throw err;
