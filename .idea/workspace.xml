@@ -107,8 +107,8 @@
       <file leaf-file-name="homeCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/homeCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44386423" vertical-offset="0" max-vertical-offset="714">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.4229765" vertical-offset="59" max-vertical-offset="714">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -756,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/homeCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44386423" vertical-offset="0" max-vertical-offset="714">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.4229765" vertical-offset="59" max-vertical-offset="714">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding />
         </state>
       </provider>

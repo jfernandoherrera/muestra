@@ -19,9 +19,9 @@ app.controller('homeCtrl', [
                             FB.api(
                                 "/me",
                                 function (response) {
-                                    $scope.username = response.first_name;
+                                    $scope.username = response.id;
 
-                                    console.log($scope.username+"  r4");
+                                    console.log("  r4");
 
 
                                 });
