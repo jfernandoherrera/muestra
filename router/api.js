@@ -25,14 +25,33 @@ module.exports = function RequestsHandler(db) {
     var app={
       name:'admin'
     };
-    db.collection('app').insert(app,    function(err, inserted){
+    db.collection('apps').insert(app,  function(err, inserted){
       if(err){
-        console.log(err);
         res.status(500).send({'error' : err});
       }
-      else{
-        res.status(200).send({'inserted' : inserted});
-      }});
+
+        var query = {
+          _id : req.body.userId + ''
+        };
+        var update = {
+          '$push' : {
+            stations : inserted[0]
+          }
+        };
+        db.collection('user').update(query, update,
+            function(err, updated){
+              if(err){
+                res.status(500).send({'err' : err});
+              }
+              else if(updated){
+                res.status(200).send(inserted[0]);
+              }
+              else{
+                res.status(404).send({err : 'No user found.'});
+              }
+            }
+        );
+      });
   };
   this.registerUser = function(req, res) {
 

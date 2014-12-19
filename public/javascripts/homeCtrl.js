@@ -5,6 +5,7 @@ app.controller('homeCtrl', [
     '$scope',
     function($scope ){
         $scope.username = "";
+        $scope.apps=[];
         fbinit();
         $scope.logout= function(){
             FB.logout(function(response) {

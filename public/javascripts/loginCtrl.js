@@ -10,7 +10,7 @@ app.controller('loginCtrl', [
                         $http.post('/login', {userId: response.authResponse.userID})
                             .success(
                             function (data, status) {
-
+        $scope.username=response.authResponse.userName;
                                 $state.go('user');
                             }
                         )
@@ -26,7 +26,8 @@ app.controller('loginCtrl', [
                                                     userId: response1.id,
                                                     cc: "11111",
                                                     email: response1.email,
-                                                    name: response1.first_name
+                                                    name: response1.first_name,
+                                                    apps:[]
                                                 };
                                                 $http.post('/register', user)
                                                     .success(
