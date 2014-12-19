@@ -6,7 +6,11 @@ app.controller('homeCtrl', [
     function($scope ){
         $scope.username = "";
         fbinit();
-
+        $scope.logout= function(){
+            FB.logout(function(response) {
+                window.location.replace('/index.html');
+            });
+        };
         function fbinit(){
             try{
                 FB.getLoginStatus(

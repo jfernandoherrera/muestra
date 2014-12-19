@@ -74,10 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22193211" vertical-offset="0" max-vertical-offset="1258">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
               <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
               <folding />
             </state>
@@ -104,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homeCtrl.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="homeCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/homeCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="646">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.44386423" vertical-offset="0" max-vertical-offset="714">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -117,8 +117,8 @@
       <file leaf-file-name="new.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/partials/new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="238">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="255">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,8 +145,6 @@
         <option value="$PROJECT_DIR$/public/router/api.js" />
         <option value="$PROJECT_DIR$/public/views/index.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/app.js" />
-        <option value="$PROJECT_DIR$/public/partials/new.html" />
-        <option value="$PROJECT_DIR$/public/javascripts/homeCtrl.js" />
         <option value="$PROJECT_DIR$/router/index.js" />
         <option value="$PROJECT_DIR$/router/api.js" />
         <option value="$PROJECT_DIR$/public/javascripts/loginCtrl.js" />
@@ -154,6 +152,8 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/public/partials/new.html" />
+        <option value="$PROJECT_DIR$/public/javascripts/homeCtrl.js" />
       </list>
     </option>
   </component>
@@ -682,22 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/homeCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="646">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="238">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614" vertical-offset="255" max-vertical-offset="1122">
@@ -756,8 +740,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22193211" vertical-offset="0" max-vertical-offset="1258">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
           <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="255">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/homeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44386423" vertical-offset="0" max-vertical-offset="714">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
           <folding />
         </state>
       </provider>
