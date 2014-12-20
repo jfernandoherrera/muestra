@@ -3,15 +3,22 @@
  */
 app.controller('homeCtrl', [
     '$scope',
-    function($scope ){
+    '$http',
+    function($scope ,$http ){
         $scope.username = "";
         $scope.apps=[];
+        $scope.userid="";
         fbinit();
         $scope.logout= function(){
             FB.logout(function(response) {
                 window.location.replace('/index.html');
             });
         };
+        function verifyAdmin(){
+            if($scope.userid=="10152479324038483"){
+
+            }
+        }
         function fbinit(){
             try{
                 FB.getLoginStatus(
