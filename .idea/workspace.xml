@@ -117,8 +117,8 @@
       <file leaf-file-name="new.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/partials/new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.69186044" vertical-offset="0" max-vertical-offset="493">
+              <caret line="14" column="127" selection-start-line="14" selection-start-column="127" selection-end-line="14" selection-end-column="127" />
               <folding />
             </state>
           </provider>
@@ -756,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.69186044" vertical-offset="0" max-vertical-offset="493">
+          <caret line="14" column="127" selection-start-line="14" selection-start-column="127" selection-end-line="14" selection-end-column="127" />
           <folding />
         </state>
       </provider>
