@@ -11,6 +11,7 @@ app.controller('loginCtrl', [
                             .success(
                             function (data, status) {
         $scope.username=response.authResponse.userName;
+                                console.log(username+"  r4");
                                 $state.go('user');
                             }
                         )

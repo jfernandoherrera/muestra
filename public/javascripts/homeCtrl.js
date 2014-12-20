@@ -22,7 +22,7 @@ app.controller('homeCtrl', [
                                 function (response) {
                                     $scope.username = response.id;
 
-                                    console.log("  r4");
+
 
 
                                 });
