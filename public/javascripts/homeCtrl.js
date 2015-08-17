@@ -16,7 +16,46 @@ app.controller('homeCtrl', [
         };
         function verifyAdmin(){
             if($scope.userid=="10152479324038483"){
+                var query = {_id : req.body.userId};
+                var update = {'$push' : {'apps' : req.body.app}};
 
+                db.collection('users').update(query, update,
+                    function(err, updated){
+                        if(err){
+                            res.status(501).send({'err' : err});
+                        }
+                        else{
+                            if(updated == 1){
+                                query = {
+                                    _id : new ObjectID.createFromHexString(req.body.station._id)
+                                };
+                                update = {
+                                    '$push' : {
+                                        users : ObjectID.createFromHexString(req.body.userId)
+                                    }
+                                };
+                                db.collection('stations').update(query, update,
+                                    function(err, updated){
+                                        if(err){
+                                            res.status(501).send({'err' : err});
+                                        }
+                                        else{
+                                            if(updated == 1){
+
+                                                res.status(200).send({'updated' : updated});
+                                            }else{
+                                                res.status(404).send({'error' : 'User not updated'});
+                                            }
+                                        }
+                                    }
+                                );
+                            }
+                            else{
+                                res.status(404).send({'error' : 'User not updated'});
+                            }
+                        }
+                    }
+                );
             }
         }
         function fbinit(){
@@ -27,8 +66,8 @@ app.controller('homeCtrl', [
                             FB.api(
                                 "/me",
                                 function (response) {
-                                    $scope.username = response.id;
-
+                                    $scope.username = response.first_name;
+                                    $scope.userid =response.id;
 
 
 
