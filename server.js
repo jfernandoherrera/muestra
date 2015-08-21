@@ -55,13 +55,13 @@ mongoClient.connect('mongodb://'+ connection_string,
            ipaddress = "127.0.0.1";
         };
 
-        myapp.listen(process.env.OPENSHIFT_NODEJS_PORT  ,ipaddress , function(){
+        myapp.listen(8000  ,ipaddress , function(){
             console.log('Express server listening on port ' +process.env.OPENSHIFT_NODEJS_PORT );
         });
     }
 );
 //var reqHandler = new user(db);
-// app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
+//app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
 // app.set('ipaddr', process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1");
 //var ipaddr = process.env.HEROKU_NODEJS_IP || "localhost";
 //var port = process.env.PORT || process.env.HEROKU_NODEJS_PORT || 8000;

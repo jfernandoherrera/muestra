@@ -1,4 +1,4 @@
-var app =angular.module('FCIWEB', ['ui.router']).run(['$window',
+var app =angular.module('FCIWEB', ['ui.router', 'ui.bootstrap']).run(['$window',
 
     function($window){
         $window.fbAsyncInit = function() {

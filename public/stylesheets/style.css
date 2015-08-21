@@ -1,11 +1,220 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
+  html { 
+  background: black; 
+  }
+  body {
+
+    background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
+    width: 25em;
+    padding: 3em;
+  }
+  a {
+    color: white;
+  }
+.box {
+  background: #7ebf9d;
+  border-radius: 15px 50px;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  width: 180px;
+  
+}
+.box:hover {
+  background: #8798d9;
+  border-radius: 50%;
+}
+  h1 {
+    text-transform: capitalize;
+    -moz-text-shadow: -1px -1px 0 black;
+    -webkit-text-shadow: 2px 2px 2px black;
+    text-shadow: -1px -1px 0 black;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    background: #CC0000;
+    width: 36em;
+    margin: 1em -2em;
+    padding: .3em 0 .3em 1.5em;
+    position: relative;
+  }
+  h1:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: .5em solid #91010B;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    bottom: -1em;
+    left: 0;
+    z-index: -1000;
+  }
+  h1:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: .5em solid #91010B;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    bottom: -1em;
+    right: 0;
+    z-index: -1000;
+  }
+  h2 { 
+    margin: 2em 0 .5em;
+    border-bottom: 1px solid #999;
+  }
+
+  pre {
+    background: black;
+    padding: 1em 0 0;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    color: #9cf;
+  }
+.woowBack{
+    cursor:crosshair;
+    background:#007777;
+height: 250px;
+width: 560px;
+animation: backani 8s infinite;
+  
+}
+.woow{
+
+  position: absolute;
+  top: 100px; left: 30px;
+  transform: rotateY(90deg);
+  background: white;
+  moz-border-radius: 100px 0px; -webkit-border-radius: 100px 0px; border-radius: 100px 0px;
+  cursor: pointer;
+  height: 27px;
+  line-height: 95px;
+  text-align: center;
+  animation: example 4s infinite;
+  width: 18px;
+}
+.woow:hover{
+    transform: rotateX(random(-90,45)deg);
+}
+.woowc{
+  
+  position: absolute;
+  top: 130px; left: 30px;
+  transform: rotateY(-90deg);
+  background: white;
+  moz-border-radius: 120px 0px; -webkit-border-radius: 120px 0px; border-radius: 120px 0px;
+  cursor: pointer;
+  height: 27px;
+  line-height: 95px;
+  text-align: center;
+  animation: examplus 4s infinite;
+  animation-delay: 2s;
+  width: 18px;
+}
+.woowc-wrapper:hover .woowc{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+    
+}
+@keyframes backani {
+    from {background: #007777;
+  }
+    to {background: #006666 ;}
+  
 }
 
-a {
-  color: #00B7FF;
-}
+@keyframes example {
+    from {
+        background: #7ebf9d;
+    }
+    to {
+        background: #8798d9;
+  
+
+       transform: rotateY(-90deg);
+ 
+      -webkit-transform: rotateY(-90deg);
+ 
+      -moz-transform: rotateY(-90deg);
+ 
+      -o-transform: rotateY(-90deg);}
+} 
+@keyframes examplus {
+    from {
+        background: #8798d9;
+        
+    }
+    to {
+        
+  background: #7ebf9d;
+
+       transform: rotateY(90deg);
+ 
+      -webkit-transform: rotateY(90deg);
+ 
+      -moz-transform: rotateY(90deg);
+ 
+      -o-transform: rotateY(90deg);}
+} 
+  ul { 
+    margin: 0; 
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    padding: .5em 0;
+  }
+
+  .brand {
+    display: block;
+    text-decoration: none;
+  }
+  .brand .brand-image {
+    float: left;
+    border: none;
+  }
+  .brand .brand-text {
+    float: left;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 4px 0;
+    color: white;
+    text-transform: uppercase;
+  }
+  .brand:hover,
+  .brand:active {
+    text-decoration: underline;
+  }
+
+  .brand:before,
+  .brand:after {
+    content: ' ';
+    display: table;
+  }
+  .brand:after {
+    clear: both;
+  }
+  .env {
+    font-size: 16px;
+    line-height: 16px;
+    color: #298A08;
+  }
+
 
 
 .result-table {

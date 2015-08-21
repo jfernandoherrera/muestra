@@ -1,4 +1,50 @@
-
+<div>
+            <script type="text/ng-template" id="CSSModal.html">
+                <div class="modal-header">
+                   <iframe src="https://contactsoft.azurewebsites.net" style="zoom:0.60" width="99.6%" height="450" frameborder="0"></iframe>
+                   
+                    <h3 class="modal-title">CSS</h3>
+                </div>
+                    <div class="modal-body">
+                    
+                    
+                        </div>
+                    <div class="modal-footer">
+                    <button class="btn btn-warning" ng-click="close()">Back</button>
+                </div>
+            </script>
+</div>
+<div>
+            <script type="text/ng-template" id="RapidModal.html">
+                <div class="modal-header">
+                      <iframe src="./partials/Rapidsoft.html" style="zoom:0.60" width="99.6%" height="450" frameborder="0"></iframe>
+                    <h3 class="modal-title">CSS</h3>
+                </div>
+                    <div class="modal-body" >
+                 
+                   </div>
+                    <div class="modal-footer">
+                    <button class="btn btn-warning" ng-click="close()">Back</button>
+                </div>
+            </script>
+</div> 
+<div>
+            <script type="text/ng-template" id="FCIModal.html">
+                <div class="modal-header" style="   background: #333;">
+                      <iframe src="../images/FCI.pdf" style="zoom:0.60" width="99.6%" height="450" frameborder="0"></iframe>
+                    <h3 class="modal-title">Folleto FCI</h3>
+                </div>
+                    <div class="modal-body" style=" background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);">
+                   <p>Documento pdf, recuerda mirar las 2 paginas</p>
+                   </div>
+                    <div class="modal-footer" style="   background: #333;">
+                    <button class="btn btn-warning" ng-click="close()">Back</button>
+                </div>
+            </script>
+</div> 
 <div class="home">
 <body>
 
@@ -9,7 +55,7 @@
     <div class="brand-text"><strong>Open</strong>Shift</div>
 </a>
 <h1>
-FCI WEB - 1.0
+José Fernando herrera - 1.0
 </h1>
 
 </body>
@@ -20,29 +66,38 @@ FCI WEB - 1.0
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-            <div class="item active">
+            <div class="item active">       
+               <div class="carousel-caption">
+                   <p>Aplicacion desarrollada para el negocio familiar, lleva mas de 3 años en uso sin presentar problemas, me ayudo mucho a entender las dificultades de implementar un sistema en una organizacion donde los empleados tienen poco conocimiento sobre computadores.</p>
+                    <h2>Mi primer proyecto.</h2>
+                    <a type="button" class="btn btn-lg btn-primary" ng-click="openFCIModal()"> Ir a folleto</a>
+                </div>
+            </div>
+            <div class="item">
+            <div class="carousel-caption">
+                <img src="../images/intereses.png"  width="450" height="300">
+                    <h2>Intereses Actuales.</h2>
+                </div>               
+            </div>
+            <div class="item">
 
                 <div class="carousel-caption">
-                    <h2>Facturacion.</h2>
-                    <a type="button" class="btn btn-lg btn-primary" ng-click="logIn()"> login</a>
+                    <p>Proyecto desarrollado para la clase ingenieria de software, para este proyecto use varios patrones de diseño como Singleton, Observer Y DAO, el desarrollo de la aplicacion fue enfocado hacia los atributos de calidad, usabilidad, eficiencia y mantenibilidad. </p>
+                    <h2>Proyecto Rapidsoft.</h2>
+                    <a type="button" class="btn btn-lg btn-primary" ng-click="openRapidModal()"> login</a>
                 </div>
             </div>
             <div class="item">
 
                 <div class="carousel-caption">
-                    <h2>Cartera.</h2>
-                    <a type="button" class="btn btn-lg btn-primary" ng-click="logIn()"> login</a>
-                </div>
-            </div>
-            <div class="item">
-
-                <div class="carousel-caption">
-                    <h2>Inventario.</h2>
-                    <a type="button" class="btn btn-lg btn-primary" ng-click="logIn()"> login</a>
+                    <p>Proyecto actual en web, permite manejar listas de contactos para las personas cuyo trabajo es telefonico, para este proyecto se esta incorporando elementos de machine learning para ayudar a medir la efectividad de las llamadas y ayudar a priorizar para reducir las llamadas perdidas o no concretadas.</p>
+                    <h2>Proyecto en web.</h2>
+                    <a type="button" class="btn btn-lg btn-primary" ng-click="openCSSModal()">ir a contactsoft</a>
                 </div>
             </div>
         </div>
