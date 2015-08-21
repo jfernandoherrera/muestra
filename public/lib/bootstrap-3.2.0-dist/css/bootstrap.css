@@ -5376,6 +5376,7 @@ button.close {
   overflow: hidden;
 }
 .modal {
+    
   position: fixed;
   top: 0;
   right: 0;
@@ -5411,7 +5412,13 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #fff;
+   background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #999;
@@ -5428,7 +5435,13 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000;
+   background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
 }
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
@@ -5442,15 +5455,24 @@ button.close {
   min-height: 16.42857143px;
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
+   background: #333;
+    background: -webkit-linear-gradient(top, black, #666);
+    background: -o-linear-gradient(top, black, #666);
+    background: -moz-linear-gradient(top, black, #666);
+    background: linear-gradient(top, black, #666);
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
 }
 .modal-header .close {
   margin-top: -2px;
+
 }
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
 }
 .modal-body {
+ 
   position: relative;
   padding: 15px;
 }

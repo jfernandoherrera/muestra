@@ -86,9 +86,11 @@
   }
 .woowBack{
     cursor:crosshair;
-    background:#007777;
-height: 250px;
-width: 560px;
+    background:#333333;
+    float:right;
+   
+height: 100px;
+width: 250px;
 animation: backani 8s infinite;
   
 }
@@ -132,9 +134,9 @@ animation: backani 8s infinite;
     
 }
 @keyframes backani {
-    from {background: #007777;
+    from {background: #000000;
   }
-    to {background: #006666 ;}
+    to {background: #333333;}
   
 }
 
