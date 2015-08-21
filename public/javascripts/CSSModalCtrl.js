@@ -13,7 +13,7 @@ app.controller('CSSModalCtrl', [
         $scope.items = [];
         
         $scope.search= function(){
-            $modalInstance.close();
+           window.location.assign("https://contactsoft.azurewebsites.net") ;
         };
 
         $scope.close = function () {
